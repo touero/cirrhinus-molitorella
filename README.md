@@ -17,7 +17,7 @@ This repository contains：
 |  name | featrue |
 | :---- | :---- | 
 | **[autoLogin](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoLogin.js)** | **自动登录某一些网站** | 
-| **[bilibiliWideScreen](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/bilibiliWideScreen.js)** | **bilibili播放页自动宽屏模式** | 
+| **[autoClick](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoClick.js)** | **bilibili播放页自动宽屏模式, 知乎问题自动显示全部内容** | 
 
 
 ## Maintainers
