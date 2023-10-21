@@ -40,9 +40,27 @@
         observer.observe(document, { childList: true, subtree: true });
     }
 
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'z') {
+            checkXPathsAndClick();
+        }
+    });
+
+    function checkXPathsAndClick() {
+        for (var i = 0; i < xpathsToWaitFor.length; i++) {
+            var element = document.evaluate(xpathsToWaitFor[i], document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+            if (element) {
+                console.log(xpathsToWaitFor[i],element)
+                element.click();
+                break;
+            }
+        }
+    }
+
     waitForXPaths(xpathsToWaitFor, function(elementToClick) {
         if (elementToClick) {
             elementToClick.click();
         }
     });
+
 })();
