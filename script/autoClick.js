@@ -2,10 +2,11 @@
 // @name         autoClick
 // @namespace    https://github.com/weiensong/cirrhinus-molitorella
 // @version      1
-// @description  bilibili auto wide screen
+// @description  B站自动宽页模式，知乎问题自动展开全部。快捷键为Z
 // @author       You
 // @match        https://www.bilibili.com/video/*
 // @match        https://www.zhihu.com/question/*
+// @license      GNU General Public License v3.0
 // ==/UserScript==
 
 (function() {
