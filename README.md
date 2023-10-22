@@ -16,7 +16,7 @@ This repository retains the ones I usually use tampermonkey JavaScript.
 This repository contains：
 |  name | featrue | download | 
 | :---- | :---- | :---- | 
-| **[autoLogin](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoLogin.js)** | **自动登录某一些网站** | **[下载](https://raw.githubusercontent.com/weiensong/cirrhinus-molitorella/main/script/autoClick.js)** |
+| **[autoLogin](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoLogin.js)** | **自动登录某一些网站** | **[下载](https://raw.githubusercontent.com/weiensong/cirrhinus-molitorella/main/script/autoClick.js?raw=true)** |
 | **[autoClick](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoClick.js)** | **bilibili播放页自动宽屏模式, 知乎问题自动显示全部内容** |
 
 
