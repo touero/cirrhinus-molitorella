@@ -14,10 +14,10 @@ This repository retains the ones I usually use tampermonkey JavaScript.
 💕 If it's helpful to you or cloning it, please star it. This is maximum encouragement for open-source contributors💕
 
 This repository contains：
-|  name | featrue | download | 
+|  name | featrue | install | 
 | :---- | :---- | :---- | 
-| **[autoLogin](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoLogin.js)** | **自动登录某一些网站** | **[下载](https://raw.githubusercontent.com/weiensong/cirrhinus-molitorella/main/script/autoClick.js?raw=true)** |
-| **[autoClick](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoClick.js)** | **bilibili播放页自动宽屏模式, 知乎问题自动显示全部内容** |
+| **[autoLogin](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoLogin.js)** | **自动登录某一些网站** | 
+| **[autoClick](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoClick.js)** | **bilibili播放页自动宽屏模式, 知乎问题自动显示全部内容** | **[安装](https://greasyfork.org/zh-CN/scripts/477988-autoclick)** |
 
 
 ## Maintainers
