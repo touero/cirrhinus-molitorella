@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         autoLogin
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/weiensong/cirrhinus-molitorella
 // @version      1
-// @description  Automatic login of some websites
+// @description  自动登录一些需要点击一次，在输入账号密码再点击登录的免验证码网站，请设置匹配的urls
 // @author       weienosng
 // @match        your urls
-
+// @license      GNU General Public License v3.0
 
 // ==/UserScript==
 
