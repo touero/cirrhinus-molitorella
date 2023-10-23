@@ -16,8 +16,24 @@
     var firstUrls = ['your urls'];
     var secondUrls = ['your urls'];
 
+    // 创建提示框元素
+    var loadingDiv = document.createElement('div');
+    loadingDiv.id = 'loading-overlay';
+    loadingDiv.style.position = 'fixed';
+    loadingDiv.style.top = '30%';
+    loadingDiv.style.left = '20px';
+    loadingDiv.style.transform = 'translateY(-50%)';
+    loadingDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+    loadingDiv.style.color = '#ffffff';
+    loadingDiv.style.padding = '10px';
+    loadingDiv.style.zIndex = '9999';
+    loadingDiv.style.display = 'none';
+    loadingDiv.innerText = 'autoLogin';
+    document.body.appendChild(loadingDiv);
+
     if (firstUrls.includes(window.location.href)) {
-        function clickLoginLinkWhenAvailable(){
+        showLoading('Clicking Log in');
+        function clickLoginLinkWhenAvailable() {
             var loginLink = document.querySelector('a[href="/accounts/login/"]');
             if (loginLink) {
                 loginLink.click();
@@ -33,6 +49,7 @@
     }
 
     if (secondUrls.includes(window.location.href)) {
+        showLoading('Input username、password and Click login');
         var usernameInput = document.getElementById('id_username');
         var passwordInput = document.getElementById('id_password');
         var loginButton = document.querySelector('button[type="submit"]');
@@ -40,6 +57,22 @@
             usernameInput.value = username;
             passwordInput.value = password;
             loginButton.click();
+            setTimeout(function() {
+                removeLoadingElement();
+            }, 2000);
+        }
+    }
+
+    function showLoading(msg) {
+        loadingDiv.innerText = 'autoLogin: '+ msg;
+        document.getElementById('loading-overlay').style.display = 'block';
+    }
+
+    function removeLoadingElement() {
+        var loadingElement = document.getElementById('loading-overlay');
+        if (loadingElement) {
+            loadingElement.remove();
+            console.log('remove tips')
         }
     }
 })();
