@@ -16,7 +16,20 @@
     var firstUrls = ['your urls'];
     var secondUrls = ['your urls'];
 
-    // 创建提示框元素
+    var loadingDiv = document.createElement('div');
+    loadingDiv.id = 'loading-overlay';
+    loadingDiv.style.position = 'fixed';
+    loadingDiv.style.top = '30%';
+    loadingDiv.style.left = '20px';
+    loadingDiv.style.transform = 'translateY(-50%)';
+    loadingDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+    loadingDiv.style.color = '#ffffff';
+    loadingDiv.style.padding = '10px';
+    loadingDiv.style.zIndex = '9999';
+    loadingDiv.style.display = 'none';
+    loadingDiv.innerText = 'autoLogin';
+    document.body.appendChild(loadingDiv);
+
     var loadingDiv = document.createElement('div');
     loadingDiv.id = 'loading-overlay';
     loadingDiv.style.position = 'fixed';
@@ -32,15 +45,16 @@
     document.body.appendChild(loadingDiv);
 
     if (firstUrls.includes(window.location.href)) {
-        showLoading('Clicking Log in');
-        function clickLoginLinkWhenAvailable() {
-            var loginLink = document.querySelector('a[href="/accounts/login/"]');
-            if (loginLink) {
-                loginLink.click();
-            } else {
+        var loginLink = document.querySelector('a[href="/accounts/login/"]');
+        if (loginLink) {
+                showLoading('Clicking Log in');
+        }
+        else {
                 requestAnimationFrame(clickLoginLinkWhenAvailable);
             }
-        }
+        function clickLoginLinkWhenAvailable() {
+                loginLink.click();
+            }
         var observer = new MutationObserver(function(mutationsList) {
             clickLoginLinkWhenAvailable();
         });
@@ -57,10 +71,14 @@
             usernameInput.value = username;
             passwordInput.value = password;
             loginButton.click();
-            setTimeout(function() {
-                removeLoadingElement();
-            }, 2000);
         }
+    }
+
+    if (thirdUrls.includes(window.location.href)){
+        showLoading('Finish');
+        setTimeout(function() {
+                removeLoadingElement();
+            }, 1000);
     }
 
     function showLoading(msg) {
