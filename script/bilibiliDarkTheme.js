@@ -6,6 +6,7 @@
 // @author       touero
 // @match        *://*.bilibili.com/*
 // @grant        none
+// @license      MIT
 // ==/UserScript==
 
 (function (window) {
