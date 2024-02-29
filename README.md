@@ -18,7 +18,7 @@ This repository contains：
 | :---- | :---- | :---- | 
 | **[autoLogin](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoLogin.js)** | **自动登录某一些网站** | 
 | **[autoClick](https://github.com/weiensong/cirrhinus-molitorella/blob/main/script/autoClick.js)** | **bilibili播放页自动宽屏模式, 知乎问题自动显示全部内容** | **[安装](https://greasyfork.org/zh-CN/scripts/477988-autoclick)** |
-| **[bilibiliDarkTheme](https://github.com/touero/cirrhinus-molitorella/blob/main/script/bilibiliDarkTheme.js)** | **bilibili黑色主题** | **[安装](https://greasyfork.org/zh-CN/scripts/485027-bilibilidarktheme)** |
+| **[bilibiliGruvboxTheme](https://github.com/touero/cirrhinus-molitorella/blob/main/script/bilibiliGruvboxTheme.js)** | **bilibili gruvbox 黑色主题** | **[安装](https://greasyfork.org/zh-CN/scripts/485027-bilibili-gruvbox-theme)** |
 
 ## Maintainers
 

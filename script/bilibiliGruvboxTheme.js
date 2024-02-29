@@ -1,12 +1,14 @@
 // ==UserScript==
-// @name         bilibiliDarkTheme
+// @name         bilibili-gruvbox-theme
 // @namespace    https://github.com/touero/cirrhinus-molitorella
-// @version      0.1
-// @description  bilibili黑色主题
+// @version      0.2
+// @description  bilibili仿gruvbox的黑色主题
 // @author       touero
 // @match        *://*.bilibili.com/*
 // @grant        none
-// @license      MIT
+// @license     MIT
+// @downloadURL https://update.greasyfork.org/scripts/485027/bilibiliDarkTheme.user.js
+// @updateURL https://update.greasyfork.org/scripts/485027/bilibiliDarkTheme.meta.js
 // ==/UserScript==
 
 (function (window) {
@@ -19,8 +21,8 @@
       --Ga0: #0d0d0e;
       --Ga0_s: #1e2022;
       --Ga0_t: #1e2022;
-      --Ga1: #000000;
-      --Ga1_s: #232527;
+      --Ga1: #282828;
+      --Ga1_s: #3c3836;
       --Ga1_t: #232527;
       --Ga1_e: #232527;
       --Ga2: #2f3134;
@@ -39,8 +41,8 @@
       --Ga8_t: #b9bdc2;
       --Ga9: #d0d3d7;
       --Ga9_t: #d0d3d7;
-      --Ga10: #e7e9eb;
-      --Ga10_t: #e7e9eb;
+      --Ga10: #bdae93;
+      --Ga10_t: #bdae93;
       --Ga11: #242628;
       --Ga12: #1f2022;
       --Wh0: #17181a;
@@ -154,7 +156,7 @@
       --Lb3: #064a69;
       --Lb4: #006996;
       --Lb5: #0087bd;
-      --Lb6: #2c9cc8;
+      --Lb6: #458588;
       --Lb7: #58b1d4;
       --Lb8: #84c5df;
       --Lb9: #b1dbeb;
@@ -208,12 +210,13 @@
 
     return style;
   }
+
     const head = document.head || document.getElementsByTagName("head")[0];
     const existingStyle = document.getElementById("ldlDarkStyle");
 
     if (existingStyle) {
         existingStyle.parentNode.removeChild(existingStyle);
     }
-
     head.appendChild(genThemeStyle());
+
 })(window);
